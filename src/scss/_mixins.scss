@@ -1,0 +1,93 @@
+@import "./fonts.scss";
+
+@mixin largeButton {
+  height: $largeHeight;
+  padding: 12px 16px;
+  font-family: "IBMPlexSunsSemiBold";
+  font-weight: 600;
+}
+
+@mixin middleButton {
+  height: $middleHeight;
+  padding: 8px 12px;
+  font-family: "IBMPlexSunsSemiBold";
+  font-weight: 600;
+}
+
+@mixin smallButton {
+  height: $smallHeight;
+  padding: 2px 4px;
+  font-family: "IBMPlexSunsRegular";
+  font-weight: 400;
+}
+
+@mixin primaryEffects {
+  background-color: $primaryBackgroundColor;
+  color: #fff;
+  &:hover {
+    background-color: $primaryBackgroundColor-Dark;
+  }
+
+  &:active {
+    background-color: $primaryBackgroundColor-Dark;
+    color: (rgba(255, 255, 255, 0.72));
+  }
+
+  &:active svg path {
+    fill: (rgba(255, 255, 255, 0.72));
+  }
+
+  &:focus {
+    background-color: $primaryBackgroundColor-Dark;
+    outline: 4px solid $borderColor;
+  }
+}
+
+@mixin secondaryEffects {
+  background-color: $secondaryBackgroundColor;
+  color: $primaryBackgroundColor;
+  & svg path {
+    fill: $primaryBackgroundColor;
+  }
+
+  &:hover {
+    background-color: $secondaryBackgroundColor-Dark;
+  }
+
+  &:active {
+    background-color: $secondaryBackgroundColor-Dark;
+    color: rgba(30, 30, 30, 0.64);
+  }
+
+  &:active svg path {
+    fill: rgba(30, 30, 30, 0.64);
+  }
+
+  &:focus {
+    background-color: $secondaryBackgroundColor-Dark;
+    outline: 4px solid $borderColor;
+  }
+}
+
+@mixin dangerEffects {
+  background-color: $dangerBackgroundColor;
+  color: #fff;
+
+  &:hover {
+    background-color: $dangerBackgroundColor-Dark;
+  }
+
+  &:active {
+    background-color: $dangerBackgroundColor-Dark;
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  &:active svg path {
+    fill: rgba(255, 255, 255, 0.72);
+  }
+
+  &:focus {
+    background-color: $dangerBackgroundColor-Dark;
+    outline: 4px solid $borderColor;
+  }
+}
