@@ -3,7 +3,7 @@ import "./buttons.scss";
 const Button = (props) => {
   return (
     <div>
-      <button className={`${props.className}`}>
+      <button disabled={props.disabled} className={`${props.className}`}>
         <span className="icon">
           <svg
             width="20"

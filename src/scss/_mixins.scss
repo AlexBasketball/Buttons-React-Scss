@@ -28,6 +28,11 @@
     background-color: $primaryBackgroundColor-Dark;
   }
 
+  &:focus {
+    background-color: $primaryBackgroundColor-Dark;
+    outline: 4px solid $borderColor;
+  }
+
   &:active {
     background-color: $primaryBackgroundColor-Dark;
     color: (rgba(255, 255, 255, 0.72));
@@ -35,11 +40,6 @@
 
   &:active svg path {
     fill: (rgba(255, 255, 255, 0.72));
-  }
-
-  &:focus {
-    background-color: $primaryBackgroundColor-Dark;
-    outline: 4px solid $borderColor;
   }
 }
 
@@ -54,6 +54,11 @@
     background-color: $secondaryBackgroundColor-Dark;
   }
 
+  &:focus {
+    background-color: $secondaryBackgroundColor-Dark;
+    outline: 4px solid $borderColor;
+  }
+
   &:active {
     background-color: $secondaryBackgroundColor-Dark;
     color: rgba(30, 30, 30, 0.64);
@@ -61,11 +66,6 @@
 
   &:active svg path {
     fill: rgba(30, 30, 30, 0.64);
-  }
-
-  &:focus {
-    background-color: $secondaryBackgroundColor-Dark;
-    outline: 4px solid $borderColor;
   }
 }
 
@@ -77,6 +77,11 @@
     background-color: $dangerBackgroundColor-Dark;
   }
 
+  &:focus {
+    background-color: $dangerBackgroundColor-Dark;
+    outline: 4px solid $borderColor;
+  }
+
   &:active {
     background-color: $dangerBackgroundColor-Dark;
     color: rgba(255, 255, 255, 0.72);
@@ -84,10 +89,5 @@
 
   &:active svg path {
     fill: rgba(255, 255, 255, 0.72);
-  }
-
-  &:focus {
-    background-color: $dangerBackgroundColor-Dark;
-    outline: 4px solid $borderColor;
   }
 }

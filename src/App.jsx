@@ -23,9 +23,15 @@ function App() {
       </Button>
       <Button className={"middleButton secondary"}>Button</Button>
       <Button className={"largeButton danger"}>Button</Button>
-      <Button className={"disabled largeButton"}>Button</Button>
-      <Button className={"smallButton  disabled"}>Button</Button>
-      <Button className={"middleButton disabled"}>Button</Button>
+      <Button disabled={true} className={"disabled largeButton"}>
+        Button
+      </Button>
+      <Button disabled={true} className={"smallButton  disabled"}>
+        Button
+      </Button>
+      <Button disabled={true} className={"middleButton disabled"}>
+        Button
+      </Button>
     </>
   );
 }
